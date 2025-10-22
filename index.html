@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma Boutique 🛍️</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Menu -->
+  <header>
+    <h1>🛒 Ma Boutique</h1>
+    <nav>
+      <select id="menu">
+        <option value="accueil">Accueil</option>
+        <option value="produits">Produits</option>
+        <option value="panier">Panier</option>
+        <option value="contact">Contact</option>
+      </select>
+    </nav>
+  </header>
+
+  <!-- Section produits -->
+  <main id="produits">
+    <div class="produit">
+      <img src="images/chaussures.jpg" alt="Chaussures" />
+      <h3>Chaussures de sport</h3>
+      <p>Confortables et légères, parfaites pour le running.</p>
+      <span class="prix">59.99 €</span>
+      <button class="ajouter-panier">Commander</button>
+    </div>
+
+    <div class="produit">
+      <img src="images/tshirt.jpg" alt="T-shirt" />
+      <h3>T-shirt coton</h3>
+      <p>100% coton bio, plusieurs tailles disponibles.</p>
+      <span class="prix">19.99 €</span>
+      <button class="ajouter-panier">Commander</button>
+    </div>
+  </main>
+
+  <!-- Panier -->
+  <section id="panier">
+    <h2>Mon Panier</h2>
+    <ul id="liste-panier"></ul>
+    <p id="total">Total : 0 €</p>
+  </section>
+</body>
+</html>
